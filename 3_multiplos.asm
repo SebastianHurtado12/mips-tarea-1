@@ -14,7 +14,7 @@ loop:
   beq  $t0, $t3, exit        # if(t0==t3) goto exit
   rem  $t1, $t0, 5           # t1 = t0 % 5  verificamos si el numero es divisible por 5
   beq  $t1, $zero, imprimir  # if(t1==0) goto imprimir el numero en cuestion SI es multiplo de 5
-  rem  $t1, $t0, 5           # t1 = t0 % 3  verificamos si el numero es divisible por 3
+  rem  $t1, $t0, 3           # t1 = t0 % 3  verificamos si el numero es divisible por 3
   beq  $t1, $zero, imprimir  # if(t3==0) goto imprimir el numero en cuestion SI es multiplo de 3
 
   addi $t0, $t0, 1      # count ++
